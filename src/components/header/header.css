@@ -20,7 +20,7 @@
     }
 }
 .away-header{
-    height: 100px;
+    height: fit-content;
     background-color: rgb(4, 4, 66);
     display: block;
     box-sizing: border-box;

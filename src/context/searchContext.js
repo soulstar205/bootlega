@@ -8,7 +8,7 @@ export const SearchProvider = (props)=>{
     const [loading, setLoading] = useState(false)
     const [name, setName] = useState('')
     const [error, setError] = useState({})
-
+    
 
     const FetchFunction = async (props) => {
         setLoading(true)

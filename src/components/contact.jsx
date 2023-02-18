@@ -18,7 +18,7 @@ function Contact() {
         setEnabled(true);
         e.preventDefault();
 
-        emailjs.sendForm('service_dhknee6', 'template_p18tcao', form.current, '8bV747R1UYBcLgPGd')
+        emailjs.sendForm('service_22xm3m3', 'template_p18tcao', form.current, '8bV747R1UYBcLgPGd')
             .then((result) => {
                 alert("Your message has been received, Thank you!");
             }, (error) => {

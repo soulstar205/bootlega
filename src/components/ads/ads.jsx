@@ -30,7 +30,7 @@ const Ads = () =>{
                                                     </div> 
                                                     </div>
                                                         <h6 className='post-topic'>
-                                                            {"Do men find it embarrasing or emasculating when a women approaches them first?"}
+                                                            {"Do men find it embarrasing or emasculating when a women approaches them first? If you do, why?"}
                                                         </h6>
                                                 </div>
                                             </div>

@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
 import Card from '../movies/movieRow'
 import {SearchContext} from '../../context/searchContext'
+import Ads from '../ads/ads'
 import './body.css'
 
 const Body =()=>{
@@ -17,7 +18,10 @@ const Body =()=>{
                     </span>
                 <div className="body-left">
                     <Card/>
+                    <Ads/>
+                    <div data-clickadilla-banner="310934"></div>
                 </div>
+
                 {/* <div className="body-right">
                     
                 </div> */}

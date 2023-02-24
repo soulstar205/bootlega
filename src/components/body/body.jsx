@@ -9,22 +9,27 @@ const Body =()=>{
     console.log(movies)
     return(
         <div className="container body">
-            <div className="body-inner">
                 <span className="movie-result">
                     {
                         movies.length != 0  && <p>We found {movies.length} results for "{name}"</p>
                     }
-                    
-                    </span>
+
+                </span>
+            <div className="body-inner">
                 <div className="body-left">
                     <Card/>
                     <Ads/>
-                    <div data-clickadilla-banner="310934"></div>
-                </div>
-
-                {/* <div className="body-right">
                     
-                </div> */}
+                </div>
+                <div className="body-right">
+                <div data-clickadilla-banner="310934"></div>
+                <div className="ads-veticals">
+                <div data-clickadilla-banner="310700"></div>
+                <div data-clickadilla-banner="313286"></div>
+
+                {/* <div data-clickadilla-banner="313306"></div> */}
+                </div>
+                </div>
             </div>
         </div>
     )

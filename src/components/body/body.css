@@ -7,20 +7,31 @@
 .body-inner{
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
     width: 100%;
     height: 100%;
 }
-.movie-result{
+.ads-veticals{
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+.movie-result p{
     font-weight: 500;
+    font-size: 14px;
     color: rgb(26, 107, 228);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 0;
+    height: fit-content;
+    padding: 5px;
+    width: 100%;
+    margin-top: 10px;
 }
 .body-left{
-    width: 60%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -29,8 +40,8 @@
 }
 .body-left span{
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    height: fit-content;
+    justify-content: flex-start;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .body-right{
@@ -38,8 +49,8 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 20px;
+    align-items: flex-start;
 }
 @media only screen and (max-width: 720px) {
     .body-left{

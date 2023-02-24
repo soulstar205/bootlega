@@ -55,6 +55,7 @@
 @media only screen and (max-width: 720px) {
     .body-left{
         width: 100%;
+        padding: 0px;
     }
     .body-right{
         display: none;

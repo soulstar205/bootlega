@@ -1,6 +1,6 @@
 .ad-container{
     height: fit-content;
-    width: fit-content;
+    width: 400px;
     margin-top: 10px;
     border-radius: 5px;
     border: 1px solid rgb(124, 68, 180);
@@ -12,10 +12,13 @@
     .ad-container{
         width: 100%;
     }
+    .u-annon{
+        width: 100%;
+    }
 }
 .u-annon{
     height: 200px;
-    width: 400px;
+    width: 100%;
     display: block;
     box-sizing: border-box;
     direction: ltr;
@@ -459,7 +462,8 @@ p{
     .each-post{
         padding: 0;
         margin-bottom: 10px;
-        min-width: 100vw;
+        min-width: 100%;
+        height: fit-content;
     }
     .post-container-inner{
         height: 100%;

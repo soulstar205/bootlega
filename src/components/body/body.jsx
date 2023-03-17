@@ -8,9 +8,9 @@ const Body =()=>{
     const {movies, name} = useContext(SearchContext)
     console.log(movies)
     return(
-        <div className="container body">
+        <div className="body">
                 <span className="movie-result">
-                    {
+                    { 
                         movies.length != 0  && <p>We found {movies.length} results for "{name}"</p>
                     }
 

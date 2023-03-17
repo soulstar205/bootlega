@@ -22,10 +22,9 @@ const Body =()=>{
                     
                 </div>
                 <div className="body-right">
-                <div data-clickadilla-banner="310934"></div>
+                
                 <div className="ads-veticals">
                 <div data-clickadilla-banner="310700"></div>
-                <div data-clickadilla-banner="313286"></div>
 
                 {/* <div data-clickadilla-banner="313306"></div> */}
                 </div>

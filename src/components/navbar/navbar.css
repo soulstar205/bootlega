@@ -27,7 +27,7 @@
 }
 .nav-links{
     display: flex;
-    width: 120px;
+    width: fit-content;
     align-items: center;
     justify-content: space-between;
     height: 100%;

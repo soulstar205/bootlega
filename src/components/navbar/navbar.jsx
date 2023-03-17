@@ -13,6 +13,16 @@ const Navbar =()=>{
                   </Link>  
                 </div>
                 <div className="nav-links">
+                <div className="nav-link">
+                    <Link to="/ai">
+                        <p>A.I</p>
+                    </Link>
+                    </div>
+                    {/* <div className="nav-link">
+                    <Link to="/blog">
+                        <p>Blog</p>
+                    </Link>
+                    </div> */}
                     <div className="nav-link">
                     <Link to="/contact">
                         <p>Contact</p>

@@ -3,7 +3,7 @@ import {Routes, Route, BrowserRouter, Navigate} from 'react-router-dom'
 import HomePage from "./pages/homePage"
 import AboutPage from "./pages/aboutPage";
 import ContactPage from "./pages/contactPage";
-import BlogPage from "./pages/blogPage";
+// import BlogPage from "./pages/blogPage";
 import AiPage from "./pages/aiPage";
 import './app.css'
 

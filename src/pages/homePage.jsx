@@ -8,9 +8,9 @@ const HomePage =()=>{
     return(
         <>
       <Header/>
-      <div className="body">
+      {/* <div className="body"> */}
       <Body/>
-      </div>
+      {/* </div> */}
       <Footer/>
         </>
     )

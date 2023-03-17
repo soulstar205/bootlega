@@ -33,6 +33,7 @@ const Card = () => {
         movies.map((data)=>( 
           <a href={data.link} target="_blank">
             <div className="card" key={data.index}>
+              <div className="card-inner">
                 <div className="card-image">
                     <img src={data.img} alt="" />
                 </div>
@@ -40,6 +41,7 @@ const Card = () => {
                     <h4 className="card-title">{data.title}</h4>
                     <p className="card-description">{data.desc}</p>
                 </div>
+              </div>
             </div>
           </a>
         ))      

@@ -10,6 +10,7 @@
     "react-bootstrap": "^2.7.2",
     "react-dom": "18.2.0",
     "react-router-dom": "^6.8.1",
+    "react-router-sitemap": "^1.2.0",
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.8",
     "validator": "^13.9.0"
@@ -17,7 +18,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "build": "react-scripts build",
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "sitemap": "babel-node src/components/sitemap/sitemap-generator.js"
   },
   "browserslist": {
     "production": [
@@ -30,5 +32,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0"
   }
 }

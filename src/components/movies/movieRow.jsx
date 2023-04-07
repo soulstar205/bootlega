@@ -41,6 +41,7 @@ const Card = () => {
                     <h4 className="card-title">{data.title}</h4>
                     <p className="card-description">{data.desc}</p>
                 </div>
+                
               </div>
             </div>
           </a>

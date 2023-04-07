@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import down from './images/down.svg'
 import up from './images/up.svg'
-import openai from './images/openai.png'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import { aiData } from './aiData';

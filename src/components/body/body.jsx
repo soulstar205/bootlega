@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-// import Card from '../movies/movieRow'
+import Card from '../movies/movieRow'
 import {SearchContext} from '../../context/searchContext'
 import { Meyo } from '../ads/meyo'
 import './body.css'
@@ -15,10 +15,10 @@ const Body =()=>{
                     }
 
                 </span>
-            <div className="body-inner">
+            <section className="body-inner">
                 <div className="body-left">
+                    <Card/>
                     <Meyo/>
-                    {/* <Ads/> */}
                     
                 </div>
                 <div className="body-right">
@@ -29,7 +29,7 @@ const Body =()=>{
                 {/* <div data-clickadilla-banner="313306"></div> */}
                 </div>
                 </div>
-            </div>
+            </section>
         </div>
     )
 }

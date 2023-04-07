@@ -34,8 +34,12 @@ a{
     padding: 10px;
     display: flex;
     flex-direction: column;
-   
+    overflow-y: scroll;
 }
+.right::-webkit-scrollbar {
+    width: 1em;
+  }
+   
 .top-text{
     width: 100%;
     direction: ltr;

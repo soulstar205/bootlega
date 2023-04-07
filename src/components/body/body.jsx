@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
-import Card from '../movies/movieRow'
+// import Card from '../movies/movieRow'
 import {SearchContext} from '../../context/searchContext'
-import Ads from '../ads/ads'
+import { Meyo } from '../ads/meyo'
 import './body.css'
 
 const Body =()=>{
@@ -17,8 +17,8 @@ const Body =()=>{
                 </span>
             <div className="body-inner">
                 <div className="body-left">
-                    <Card/>
-                    <Ads/>
+                    <Meyo/>
+                    {/* <Ads/> */}
                     
                 </div>
                 <div className="body-right">

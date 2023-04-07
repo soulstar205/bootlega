@@ -6,8 +6,9 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import { aiData } from './aiData';
 import {Link} from 'react-router-dom'
+import {Meyo} from '../ads/meyo'
 import './ai.css'
-
+ 
 
 
 const AiList = () => {
@@ -15,13 +16,16 @@ const AiList = () => {
     const [show, setShow] = useState(false);
 
     return(
-        <div className="ai">
+        <div className="ai"> 
             <div className="ai-body">
                 <section className="ai-header">
                     <h2 className="ai-topic">All The A.I Tools In One Application</h2>
                     <div className="intro">
                         <p>Welcome to Bootlega A.I that brings together multiple AI tools in one single application! This platform offers a powerful suite of AI functionalities that can transform the way you work and make decisions. Imagine being able to harness the power of natural language processing, speech recognition, and computer vision all in one place. With our platform, you can streamline your workflow, automate complex tasks, and gain valuable insights from your data. This is especially relevant given the increasing importance of AI in various industries. Stay ahead of the curve with our cutting-edge platform and unlock the full potential of AI.</p>
                     </div>
+                </section>
+                <section className='ads'>
+                    <Meyo />
                 </section>
                 <section className='ai-segment'>
                     {

@@ -18,11 +18,11 @@ const Navbar =()=>{
                         <p>A.I</p>
                     </Link>
                     </div>
-                    {/* <div className="nav-link">
+                    <div className="nav-link">
                     <Link to="/blog">
                         <p>Blog</p>
                     </Link>
-                    </div> */}
+                    </div>
                     <div className="nav-link">
                     <Link to="/contact">
                         <p>Contact</p>
@@ -30,7 +30,7 @@ const Navbar =()=>{
                     </div>
                     <div className="nav-link">
                     <Link to="/about">
-                        <p>How-To</p>
+                        <p>About</p>
                     </Link>
                     </div>
                 </div>

@@ -3,7 +3,8 @@
     width: 100%;
     margin: 0;
     padding: 0px;
-    flex: 1
+    flex: 1;
+    padding: 20px 0px;
 }
 .body-inner{
     box-sizing: border-box;

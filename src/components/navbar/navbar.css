@@ -3,7 +3,7 @@
     display: block;
     box-sizing: border-box;
     direction: ltr;
-    padding-right: 10px;
+    padding-right: 5px;
     padding-top: 10px;
     position: relative;
     top: 0px;
@@ -18,7 +18,7 @@
 }
 .nav-logo{
     height: 50px;
-    width: 200px;
+    width: fit-content;
 }
 .logo{
     height: 100%;

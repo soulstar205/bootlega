@@ -6,11 +6,11 @@ const Card =({img, topic, desc, video, poster})=>{
         <div className="card-container">
             <div className="card-holder">
                 <div className="left">
-                    {/* <img src={img} alt="" className="pic" /> */}
-                    <video width="100%" height="100%" autoPlay loop playsInline muted
+                    <img src={poster} alt="" style={{height: "100%", width: "100%"}} />
+                    {/* <video width="100%" height="100%" autoPlay loop playsInline muted
                     poster={poster}>
                         <source src={video} type="video/mp4"/>
-                    </video>
+                    </video> */}
                 </div>
                 <div className="right">
                     <div className="top-text">

@@ -26,7 +26,7 @@ function Blogpost() {
         setPost('');
         setImage('');
       } catch (err) {
-        console.error(err.response.data);
+        console.error(err);
       }
     };
 

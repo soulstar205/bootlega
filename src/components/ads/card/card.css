@@ -1,5 +1,5 @@
 .card-container{
-    height: 300px;
+    height: 200px;
     width: 700px;
     box-sizing: border-box;
     direction: ltr;
@@ -10,9 +10,9 @@
 }
 @media screen and (max-width: 800px) {
     .card-container{
-        height: 250;
+        height: 200;
         width: 100%;
-    }
+    } 
 }
 a{
     text-decoration: none;
@@ -67,3 +67,30 @@ a{
     font-size: 15px;
     text-align: left;
 }
+@media screen and (max-width: 400px) {
+    .card-container{
+        height: fit-content;
+        width: 100%;
+    } 
+    .card-holder{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .top-text{
+        width: 100%;
+    }
+    .desc{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        height: fit-content;
+    }
+}  

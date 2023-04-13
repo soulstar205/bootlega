@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import TimeAgo from 'react-timeago'
 import './blog.css'
 import axios from 'axios'
-import { Blogdata } from './blogdata'
+import { Meyo } from '../ads/meyo'
 
 const Blogs = () => {
     const [posts, setPosts] = useState([])
@@ -22,6 +22,9 @@ const Blogs = () => {
             <div className="blog-inner">
                 <div className="blog-side">
                     <h2>Film Review And Recommendation</h2>
+                    <section className='ads'>
+                        <Meyo />
+                    </section>
 
                     { posts.map((post)=>{
                         return(

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams  } from "react-router-dom";
 import TimeAgo from 'react-timeago'
+import { Meyo } from '../ads/meyo';
 import './blog.css'
 import axios from 'axios';
 
@@ -35,6 +36,9 @@ const SingleBlog =()=>{
                         <small><TimeAgo date={post.updatedAt}/></small>
                     </div>
                     <div className="blog-post-body">
+                    <section className='ads'>
+                        <Meyo />
+                    </section>
                         <text style={{ whiteSpace: "pre-line"}} className="post-body-text">{post.content}</text>
                     </div>
                     <div className="post-footer">

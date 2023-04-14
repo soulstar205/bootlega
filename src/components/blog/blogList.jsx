@@ -4,15 +4,19 @@ import TimeAgo from 'react-timeago'
 import './blog.css'
 import axios from 'axios'
 import { Meyo } from '../ads/meyo'
+import { Verticals } from '../ads/verticals'
+import ClipLoader from "react-spinners/ClipLoader";
 
 const Blogs = () => {
     const [posts, setPosts] = useState([])
+    const [loading, setLoading] =useState(false)
 
     useEffect(()=>{
+        setLoading(true)
         const fetch= async()=>{
             const res = await axios.get('https://bootlega-blog.vercel.app/blogs')
             setPosts([...res.data])
-            console.log(posts)
+            setLoading(false)
         }
         fetch()
     },[])
@@ -21,12 +25,30 @@ const Blogs = () => {
         <div className="blog-container">
             <div className="blog-inner">
                 <div className="blog-side">
-                    <h2>Film Review And Recommendation</h2>
+                    <div className="blog-heading">
+                        <h2>Bootlega Film Review</h2>
+                    </div>
                     <section className='ads'>
                         <Meyo />
                     </section>
-
-                    { posts.map((post)=>{
+                    {
+                        loading && 
+                        <div className='loading'>
+                        <span className="movie-result">Loading blog posts... Please wait.</span>
+                          <ClipLoader
+                            color={"blue"}
+                            loading={loading}
+                            cssOverride={""}
+                            size={150}
+                            aria-label="Please wait..."
+                            data-testid="loader"
+                          />
+                        </div> 
+                    }
+                    {
+                         
+                    
+                    posts.map((post)=>{
                         return(
                     <Link to={`/blog/${post._id}`} state={{ slug: post._id, id: post._id }}>
                     <div className="each-blog" key={post._id}> 
@@ -53,7 +75,7 @@ const Blogs = () => {
                     }
                 </div>
                 <div className="ad-side">
-
+                    <Verticals/>
                 </div>
             </div>
         </div>

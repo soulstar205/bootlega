@@ -644,5 +644,22 @@ p{
 }
 .meyo-container{
     width: 100%;
-    height: 100%
+    height: 100%;
+    display: flex;
+}
+@media only screen and (max-width: 750px) {
+    .veritcal-container{
+        display: none;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .meyo-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .veritcal-container{
+        display: none;
+    }
 }

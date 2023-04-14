@@ -1,7 +1,7 @@
 .blog-container{
     box-sizing: border-box;
     direction: ltr;
-    display: block;
+    display: flex;
     height: 100%;
     width: 100%;
     padding: 20px;
@@ -20,15 +20,25 @@
     box-sizing: border-box;
     direction: ltr;
     padding-left: 20px;
-
 }
-
+.blog-heading{
+  height: fit-content;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .ad-side{
     width: 30%;
     height: 100%;
     box-sizing: border-box;
     direction: ltr;
-    padding: 20px;
+    padding-left: 20px;
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .blog-card {
     display: flex;

@@ -44,7 +44,7 @@ export const Meyo =()=>{
         <div className="meyo-container">
             {adsmap.map((ad)=>{
                 return(
-                    <a href={ad.url} target="blank" className={ad.hide}>
+                    <a href={ad.url} target="blank" key={ad.id}>
                         <Card poster={ad.pic}/>
                     </a>
                 )

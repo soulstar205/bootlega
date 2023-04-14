@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams  } from "react-router-dom";
 import TimeAgo from 'react-timeago'
-import {Buffer} from 'buffer';
+// import {Buffer} from 'buffer';
 import { Meyo } from '../ads/meyo';
 import './blog.css'
 import axios from 'axios';
@@ -26,9 +26,9 @@ const SingleBlog =()=>{
         fetch()
       }, [slug]);
 
-    //   const blob = new Blob([Int8Array.from(post.image)], {type: post.img.contentType });
+        // const blob = new Blob([Int8Array.from(post.image.data )], {type: post.image.contentType });
 
-    //     const image = window.URL.createObjectURL(blob);
+        // const imageUrl = window.URL.createObjectURL(blob);
 
 
     return(
@@ -50,7 +50,8 @@ const SingleBlog =()=>{
                     }
                 <div className="post">
                     <div className={post.image? "post-image": ""}>
-                       {post.image && <img src={`data:${post.image.contentType};base64, ${Buffer.from(post.image).toString('base64')}`} alt={post.title} />}
+                       {/* {post.image && <img src={`data:${post.image.contentType};base64, ${Buffer.from(post.image).toString('base64')}`} alt={post.title} />} */}
+                       {post.image && <img src={post.image} alt={post.title} />}
                     </div>
                     <div className="post-title">
                         <h3>{post.title}</h3>

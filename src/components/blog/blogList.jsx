@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import TimeAgo from 'react-timeago'
-import './blog.css'
+// import {Buffer} from 'buffer';
 import axios from 'axios'
 import { Meyo } from '../ads/meyo'
 import { Verticals } from '../ads/verticals'
 import ClipLoader from "react-spinners/ClipLoader";
+import './blog.css'
 
 const Blogs = () => {
     const [posts, setPosts] = useState([])
@@ -20,6 +21,7 @@ const Blogs = () => {
         }
         fetch()
     },[])
+
 
     return(
         <div className="blog-container">
@@ -46,15 +48,15 @@ const Blogs = () => {
                         </div> 
                     }
                     {
-                         
-                    
-                    posts.map((post)=>{
+                    // posts.map((post, index) => renderContent(post, index))
+                    posts.sort((a, b)=> new Date(b.updatedAt) - new Date(a.updatedAt) ).map((post)=>{
                         return(
                     <Link to={`/blog/${post._id}`} state={{ slug: post._id, id: post._id }}>
                     <div className="each-blog" key={post._id}> 
                         <div className="blog-card" key=''>
                             <div className="card-image">
-                            {  post.image &&  <img src={`http://localhost:3001/${post.image}`} alt="" />}
+                            {/* {post.image && <img src={`data:${post.image.contentType};base64, ${Buffer.from(post.image).toString('base64')}`} alt={post.title} />} */}
+                            {post.image && <img src={post.image} alt={post.title} />}
                             </div>
                             <div className="card-text">
                                 <div className="blog-card-text">

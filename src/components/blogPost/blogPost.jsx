@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import {errorUtils} from '../error'
 import axios from 'axios';
 import './blog-post.css'
 
@@ -18,15 +19,17 @@ function Blogpost() {
       formData.append('title', topic);
       formData.append('content', post);
       formData.append('image', image);
-      //https://bootlega-blog.vercel.app
+      //https://bootlega-blog.vercel.app/blogs
+
       try {
-        const res = await axios.post('https://bootlega-blog.vercel.app/blogs', formData);
+        const res = await axios.post('http://localhost:3001/blogs', formData);
         console.log(res.data);
         setTopic('');
         setPost('');
         setImage('');
       } catch (err) {
-        console.error(err);
+        const postError = errorUtils.getError(err)
+        console.log(postError)
       }
     };
 

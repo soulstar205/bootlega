@@ -42,13 +42,14 @@ export const Meyo =()=>{
     
     return(
         <div className="meyo-container">
-            {adsmap.map((ad)=>{
+            <div id="container-980ab69f0c912037141d7af1fddee000"></div>
+            {/* {adsmap.map((ad)=>{
                 return(
                     <a href={ad.url} target="blank" key={ad.id}>
                         <Card poster={ad.pic}/>
                     </a>
                 )
-            })}
+            })} */}
         </div>
     )
 }

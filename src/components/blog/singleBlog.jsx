@@ -62,12 +62,14 @@ const SingleBlog =()=>{
                     <div className="blog-post-body">
                     <section className='ads'>
                         <Meyo />
+                        <div id="container-980ab69f0c912037141d7af1fddee000"></div>
                     </section>
                         <text style={{ whiteSpace: "pre-line"}} className="post-body-text">{post.content}</text>
                     </div>
                     <div className="post-footer">
-                        <small>{`To download ${"Blade runner"}, click here.`}</small>
+                        {/* <small>{`To download ${"Blade runner"}, click here.`}</small> */}
                     </div>
+                    <div id="container-980ab69f0c912037141d7af1fddee000"></div>
                 </div>
             </div>
             <div className="ad-side">

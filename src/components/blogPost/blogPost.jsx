@@ -8,8 +8,17 @@ function Blogpost() {
     const [topic, setTopic] = useState('');
     const [image, setImage] = useState('');
 
-    const onImageChange=(e)=>{
-      setImage(e.target.files[0])
+
+    const convertToBase64=(e)=>{
+      const reader = new FileReader()
+      reader.readAsDataURL(e.target.files[0])
+      reader.onload =()=>{
+        console.log(reader.result)
+        setImage(reader.result)
+      }
+      reader.onerror = error => {
+        console.log("Error: ", error)
+      }
     }
 
     const submitPost = async (e) => {
@@ -41,7 +50,7 @@ function Blogpost() {
               <div className="input">
                 <input type="text" placeholder='TOPIC' value={topic} className="topic" onChange={e => setTopic(e.target.value)}/>
               </div>
-              <input type="file" accept='image/*' id="files" onChange={onImageChange}/>
+              <input type="file" accept='image/*' id="files" onChange={convertToBase64}/>
               </div>
               <div className="bottom">
                 <textarea className="input-area" value={post} onChange={e => setPost(e.target.value)}/>
@@ -50,6 +59,7 @@ function Blogpost() {
                     Submit
                   </button>
                 </div>
+                {image === "" || image === null? "": <img src={image}/>}
               </div>
             </form>
           </div>

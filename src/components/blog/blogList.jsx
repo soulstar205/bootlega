@@ -4,6 +4,7 @@ import TimeAgo from 'react-timeago'
 // import {Buffer} from 'buffer';
 import axios from 'axios'
 import { Meyo } from '../ads/meyo'
+import {Card} from '../ads/card/card'
 import { Verticals } from '../ads/verticals'
 import ClipLoader from "react-spinners/ClipLoader";
 import './blog.css'
@@ -32,7 +33,8 @@ const Blogs = () => {
                     </div>
                     <section className='ads'>
                         <Meyo />
-                    </section>
+                        <div id="container-980ab69f0c912037141d7af1fddee000"></div>
+                    </section> 
                     {
                         loading && 
                         <div className='loading'>
@@ -56,7 +58,7 @@ const Blogs = () => {
                         <div className="blog-card" key=''>
                             <div className="card-image">
                             {/* {post.image && <img src={`data:${post.image.contentType};base64, ${Buffer.from(post.image).toString('base64')}`} alt={post.title} />} */}
-                            {post.image && <img src={post.image} alt={post.title} />}
+                            {post.image && <img loading='lazy' src={post.image} data-lazy-src={post.image} alt={post.title} />}
                             </div>
                             <div className="card-text">
                                 <div className="blog-card-text">

@@ -25,6 +25,7 @@ const AiList = () => {
                 </section>
                 <section className='ads'>
                     <Meyo />
+                    <div id="container-980ab69f0c912037141d7af1fddee000"></div>
                 </section>
                 <section className='ai-segment'>
                     {
@@ -86,6 +87,7 @@ const AiList = () => {
                         })
                     }
                 </section>
+                <div id="container-980ab69f0c912037141d7af1fddee000"></div>
             </div>
         </div>
     )

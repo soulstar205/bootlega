@@ -20,13 +20,19 @@ export const Verticals =()=>{
 
     return(
         <div className="vertical-container">
-            {adsmap.map((ad)=>{
+            {/* {adsmap.map((ad)=>{
                 return(
                     <a href={ad.url} target="blank" key={ad.id}>
                         <Card poster={ad.pic}/>
                     </a>
                 )
-            })}
+            })} */}
+            <iframe
+                title="Ad"
+                src="http://www.profitabledisplaynetwork.com/d29fd60cbf0d2b4bc7e71083250dd2a9"
+                width={160}
+                height={600}
+            ></iframe>
         </div>
     )
 }

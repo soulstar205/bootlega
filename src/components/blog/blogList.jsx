@@ -4,8 +4,8 @@ import TimeAgo from 'react-timeago'
 // import {Buffer} from 'buffer';
 import axios from 'axios'
 import { Meyo } from '../ads/meyo'
-import {Card} from '../ads/card/card'
 import { Verticals } from '../ads/verticals'
+import AdsHorizontal from '../ads/ads'
 import ClipLoader from "react-spinners/ClipLoader";
 import './blog.css'
 
@@ -32,6 +32,7 @@ const Blogs = () => {
                         <h2>Bootlega Film Review</h2>
                     </div>
                     <section className='ads'>
+                        <AdsHorizontal/>
                         <Meyo />
                         <div id="container-980ab69f0c912037141d7af1fddee000"></div>
                     </section> 

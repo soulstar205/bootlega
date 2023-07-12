@@ -6,6 +6,8 @@ import Popover from 'react-bootstrap/Popover';
 import { aiData } from './aiData';
 import {Link} from 'react-router-dom'
 import {Meyo} from '../ads/meyo'
+import AdsHorizontal from '../ads/ads'
+import { Verticals } from '../ads/verticals';
 import './ai.css'
  
 
@@ -25,6 +27,7 @@ const AiList = () => {
                 </section>
                 <section className='ads'>
                     <Meyo />
+                    <AdsHorizontal/>
                     <div id="container-980ab69f0c912037141d7af1fddee000"></div>
                 </section>
                 <section className='ai-segment'>

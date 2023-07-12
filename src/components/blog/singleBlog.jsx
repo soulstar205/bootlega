@@ -6,6 +6,7 @@ import { Meyo } from '../ads/meyo';
 import './blog.css'
 import axios from 'axios';
 import { Verticals } from '../ads/verticals';
+import AdsHorizontal from '../ads/ads'
 import ClipLoader from "react-spinners/ClipLoader";
 
 
@@ -62,6 +63,7 @@ const SingleBlog =()=>{
                     <div className="blog-post-body">
                     <section className='ads'>
                         <Meyo />
+                        <AdsHorizontal/>
                         <div id="container-980ab69f0c912037141d7af1fddee000"></div>
                     </section>
                         <text style={{ whiteSpace: "pre-line"}} className="post-body-text">{post.content}</text>

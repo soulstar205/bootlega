@@ -25,21 +25,25 @@
 .vertical-container{
     width: 240px;
     height: 100%;
+    cursor: pointer
 }
 .horizontal-ads-container{
     height: fit-content;
     width: fit-content;
     margin-bottom: 10px;
+    cursor: pointer
 }
 .ad-container-mobile{
     height: fit-content;
     width: fit-content;
     margin-bottom: 5px;
+    cursor: pointer
 }
 .ad-container-desktop{
     height: fit-content;
     width: fit-content;
     margin-bottom: 5px;
+    cursor: pointer
 }
 @media only screen and (min-width: 750px) {
     .ad-container-mobile{

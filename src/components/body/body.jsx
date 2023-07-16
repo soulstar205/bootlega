@@ -19,8 +19,8 @@ const Body =()=>{
                 </section>
             <section className="body-inner">
                 <div className="body-left">
-                    <AdsHorizontal/>
                     <Card/>
+                    <AdsHorizontal/>
                     <Meyo/>
                     {/* <div id="container-980ab69f0c912037141d7af1fddee000"></div> */}
                     

@@ -7,6 +7,7 @@ import Blogs from '../components/blog/blogList'
 import SingleBlog from '../components/blog/singleBlog'
 import Blogpost from '../components/blogPost/blogPost'
 import Login from '../components/blogPost/login'
+import FloatingAd from '../components/ads/floater'
 // import { ProtectedRoute } from './protectedRoute'
 
 const BlogPage = () => {
@@ -19,6 +20,7 @@ const BlogPage = () => {
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/post" element={< Blogpost/>}/>  
             </Routes>
+            <FloatingAd/>
             <Footer/>
         </div>
     )

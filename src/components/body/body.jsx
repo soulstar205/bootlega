@@ -3,7 +3,9 @@ import Card from '../movies/movieRow'
 import {SearchContext} from '../../context/searchContext'
 import { Meyo } from '../ads/meyo'
 import { Verticals } from '../ads/verticals'
-import AdsHorizontal from '../ads/ads'
+import {AdsterraVertical} from '../ads/verticals'
+import {AdsHorizontal} from '../ads/ads'
+// import {AdsterraHorizontal} from '../ads/ads'
 import './body.css'
 
 const Body =()=>{
@@ -20,6 +22,7 @@ const Body =()=>{
             <section className="body-inner">
                 <div className="body-left">
                     <Card/>
+                    {/* <AdsterraHorizontal/> */}
                     <Meyo/>
                     <AdsHorizontal/>
                     {/* <div id="container-980ab69f0c912037141d7af1fddee000"></div> */}
@@ -28,11 +31,8 @@ const Body =()=>{
                 <div className="body-right">
                 
                 <div className="ads-veticals">
+                <AdsterraVertical/>
                 <Verticals/>
-                <iframe src="http://www.profitabledisplaynetwork.com/d29fd60cbf0d2b4bc7e71083250dd2a9" 
-                        height="600px" 
-                        width="160px">
-                </iframe>
                 {/* <div data-clickadilla-banner="310700"></div> */}
 
                 {/* <div data-clickadilla-banner="313306"></div> */}

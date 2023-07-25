@@ -4,8 +4,8 @@ import TimeAgo from 'react-timeago'
 // import {Buffer} from 'buffer';
 import axios from 'axios'
 import { Meyo } from '../ads/meyo'
-import { Verticals } from '../ads/verticals'
-import AdsHorizontal from '../ads/ads'
+import { Verticals, AdsterraVertical } from '../ads/verticals'
+import {AdsHorizontal} from '../ads/ads'
 import ClipLoader from "react-spinners/ClipLoader";
 import './blog.css'
 
@@ -81,6 +81,7 @@ const Blogs = () => {
                 </div>
                 <div className="ad-side">
                     <Verticals/>
+                    <AdsterraVertical/>
                 </div>
             </div>
         </div>

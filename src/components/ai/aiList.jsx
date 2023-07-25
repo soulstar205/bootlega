@@ -6,7 +6,7 @@ import Popover from 'react-bootstrap/Popover';
 import { aiData } from './aiData';
 import {Link} from 'react-router-dom'
 import {Meyo} from '../ads/meyo'
-import AdsHorizontal from '../ads/ads'
+import {AdsHorizontal} from '../ads/ads'
 import { Verticals } from '../ads/verticals';
 import './ai.css'
  

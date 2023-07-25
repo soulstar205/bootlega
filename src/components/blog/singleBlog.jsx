@@ -6,7 +6,7 @@ import { Meyo } from '../ads/meyo';
 import './blog.css'
 import axios from 'axios';
 import { Verticals } from '../ads/verticals';
-import AdsHorizontal from '../ads/ads'
+import {AdsHorizontal} from '../ads/ads'
 import ClipLoader from "react-spinners/ClipLoader";
 
 

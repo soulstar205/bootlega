@@ -13,14 +13,13 @@ const SearchBar = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     FetchFunction(searchValue)
-    console.log(`Searching for: ${searchValue}`);
   };
 
   return (
       <div className="form-container">
         <div className="container-inner">
           <div className="search-topic">
-            <h2>Free Movie Downloader</h2> 
+          <a href="https://clickworker.com" rel="nofollow"><h2>Free Movie Downloader</h2></a>
           </div>
             <form onSubmit={handleSubmit} className="search-form">
             <input

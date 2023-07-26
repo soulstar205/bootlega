@@ -56,7 +56,7 @@ function Contact() {
               <input type="text" id="name" value={name} name="name" onChange={handleNameChange} />
             </div>
             <div className="form-control">
-              <label htmlFor="email">Your email:</label>
+            <a href="https://swagbucks.com" rel="nofollow"><label htmlFor="email">Your email:</label></a> 
               <input type="text" id="email" value={email} name="email" onChange={validateEmail} />
               {emailError && <span className="contact__form-error">{emailError}</span>}
             </div>

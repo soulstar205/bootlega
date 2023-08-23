@@ -29,7 +29,7 @@ const Blogs = () => {
             <div className="blog-inner">
                 <div className="blog-side">
                     <div className="blog-heading">
-                        <h2>Bootlega Film Review</h2>
+                    <a href="https://clickworker.com" rel="nofollow"> <h2>Bootlega Film Review</h2></a>
                     </div>
                     <section className='ads'>
                         <AdsHorizontal/>

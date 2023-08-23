@@ -19,7 +19,7 @@ const SearchBar = () => {
       <div className="form-container">
         <div className="container-inner">
           <div className="search-topic">
-          <a href="https://clickworker.com" rel="nofollow"><h2>Free Movie Downloader</h2></a>
+          <h2>Free Movie Downloader</h2>
           </div>
             <form onSubmit={handleSubmit} className="search-form">
             <input

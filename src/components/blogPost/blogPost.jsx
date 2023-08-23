@@ -24,14 +24,16 @@ function Blogpost() {
     const submitPost = async (e) => {
       e.preventDefault();
   
-      const formData = new FormData();
-      formData.append('title', topic);
-      formData.append('content', post);
-      formData.append('image', image);
+      const formData = {
+        title: topic, 
+        content: post,
+        image: image
+      }
       //https://bootlega-blog.vercel.app/blogs
+      // http://localhost:3001/blogs
 
       try {
-        const res = await axios.post('http://localhost:3001/blogs', formData);
+        const res = await axios.post('https://bootlega-blog.vercel.app/blogs', {...formData});
         console.log(res.data);
         setTopic('');
         setPost('');

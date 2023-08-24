@@ -4,7 +4,7 @@ import {SearchContext} from '../../context/searchContext'
 import { Meyo } from '../ads/meyo'
 import { Verticals } from '../ads/verticals'
 import {AdsterraVertical} from '../ads/verticals'
-import Ads from '../ads/vast'
+// import Ads from '../ads/vast'
 import {AdsHorizontal} from '../ads/ads'
 // import {AdsterraHorizontal} from '../ads/ads'
 import './body.css'
@@ -33,7 +33,7 @@ const Body =()=>{
                 
                 <div className="ads-veticals">
                 {/* <AdsterraVertical/> */}
-                <Ads/>
+                {/* <Ads/> */}
                 <Verticals/>
                 {/* <div data-clickadilla-banner="310700"></div> */}
 

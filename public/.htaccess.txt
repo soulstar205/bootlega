@@ -1,0 +1,6 @@
+# Allow access to the acme-challenge directory
+<DirectoryMatch "^\.well-known/acme-challenge/">
+    Order allow,deny
+    Allow from all
+    Satisfy any
+</DirectoryMatch>

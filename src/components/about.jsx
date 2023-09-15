@@ -7,7 +7,6 @@ function About() {
         <section className="about">
             <div className="about-me">
               <h1>Welcome to Bootlega<span className="wave">👋</span></h1> 
-
             </div>
             <div className="about-page">
                 <h2 >Free movie search engine</h2>

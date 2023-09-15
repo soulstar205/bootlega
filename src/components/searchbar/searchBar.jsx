@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { SearchContext } from '../../context/searchContext';
+import ExternalLink from '../ads/smartlink';
 import './searchbar.css'
 
 const SearchBar = () => {

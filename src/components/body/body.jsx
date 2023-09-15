@@ -24,8 +24,8 @@ const Body =()=>{
                 <div className="body-left">
                     <Card/>
                     {/* <AdsterraHorizontal/> */}
-                    <AdsHorizontal/>
                     <Meyo/>
+                    <AdsHorizontal/>
                     {/* <div id="container-980ab69f0c912037141d7af1fddee000"></div> */}
                     
                 </div>

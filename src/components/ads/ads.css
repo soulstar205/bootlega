@@ -31,7 +31,8 @@
     height: fit-content;
     width: fit-content;
     margin-bottom: 10px;
-    cursor: pointer
+    cursor: pointer;
+    padding: 5px
 }
 .ad-container-mobile{
     height: fit-content;

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Card from './card/card'
 import meyo from '../images/Banner2.gif'
+import chaturbate from '../images/Animated-160.gif'
 import './ads.css'
 
 
@@ -9,11 +10,11 @@ export const Verticals =()=>{
 
     return(
         <div className="vertical-container">
-            <a href='https://cashbox.money/r/ac0d1d9d65c34c069cc64dcc67d86c19'>
+            <a href="https://chaturbate.com/in/?tour=LQps&campaign=xvBLi&track=default&room=soulstar205">
 
-            <img src="https://files.webmoney.ru/files/bSpSsZsr/inline"
+            <img src={chaturbate}
                     alt=""
-                    style={{height: "400px", width : "240px"}} />
+                    style={{height: "600px", width : "160px"}} />
                 {/* <iframe
                     title="Ad"
                     src="https://files.webmoney.ru/files/bSpSsZsr/inline"
@@ -38,7 +39,7 @@ export const AdsterraVertical =()=>{
         .catch((error) => console.error('Failed to fetch ad URL', error));
     }, []);
     console.log(adURL)
-
+ 
     return(
          <div>
             {adURL ? (

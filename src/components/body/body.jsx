@@ -19,13 +19,13 @@ const Body =()=>{
                         movies.length != 0  && <p>We found {movies.length} results for "{name}"</p>
                     }
 
-                </section>
+                </section> 
             <section className="body-inner">
                 <div className="body-left">
                     <Card/>
                     {/* <AdsterraHorizontal/> */}
-                    <Meyo/>
                     <AdsHorizontal/>
+                    <Meyo/>
                     {/* <div id="container-980ab69f0c912037141d7af1fddee000"></div> */}
                     
                 </div>

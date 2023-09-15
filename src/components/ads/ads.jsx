@@ -1,24 +1,25 @@
 import React, {useState, useEffect} from 'react'
-import xml2js from "xml2js";
 import './ads.css'
+import mobile from '../images/Animated-300-2.gif'
+import horizontal from '../images/horizontal.gif'
 
 
 export const AdsHorizontal = () =>{
     return(
         <div className='horizontal-ads-container'>
             <div className="ad-container-mobile">
-                <a href='https://cashbox.money/r/ac0d1d9d65c34c069cc64dcc67d86c19'>
+                <a href='https://chaturbate.com/in/?tour=LQps&campaign=xvBLi&track=default&room=soulstar205'>
                     
-                    <img src='https://files.webmoney.ru/files/a7ozSLv5/inline'
+                    <img src={mobile}
                     alt=""
-                    style={{height: "200px", width : "200px"}} />
+                    style={{height: "300px", width : "300px"}} />
                 </a>
                
             </div>
 
             <div className="ad-container-desktop">
-                <a href="https://cashbox.money/r/ac0d1d9d65c34c069cc64dcc67d86c19">
-                    <img src="https://files.webmoney.ru/files/dKdpetsg/inline" a
+                <a href="https://chaturbate.com/in/?tour=LQps&campaign=xvBLi&track=default&room=soulstar205">
+                    <img src={horizontal} 
                     alt="" 
                     style={{height: "90px", width : "720px"}}/>
                 </a>
